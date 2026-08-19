@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Goje | Unleashing limitless possibilities</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="color-wash" aria-hidden="true"></div>
+    <div class="dust-field" aria-hidden="true"></div>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Goje home">
+        <span class="brand-mark">G</span>
+        <span class="brand-text">Goje</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-menu">
+        <i aria-hidden="true"></i>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="site-menu" id="site-menu" aria-label="Site navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <aside class="guide" aria-label="Animated site guide. Drag to move, tap to talk.">
+      <div class="guide-shell">
+        <div class="guide-ring" aria-hidden="true"></div>
+        <div class="guide-speech" id="guide-speech" role="status" aria-live="polite"></div>
+        <div class="guide-beam"></div>
+        <div class="guide-antenna guide-antenna-left"></div>
+        <div class="guide-antenna guide-antenna-right"></div>
+        <div class="guide-head">
+          <span class="guide-eye"><span class="guide-pupil"></span></span>
+          <span class="guide-eye"><span class="guide-pupil"></span></span>
+        </div>
+        <div class="guide-body">
+          <span class="guide-arm guide-arm-left"></span>
+          <span class="guide-arm guide-arm-right"></span>
+          <span class="guide-core"></span>
+          <span class="guide-pulse"></span>
+        </div>
+        <span class="guide-foot guide-foot-left"></span>
+        <span class="guide-foot guide-foot-right"></span>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content reveal from-top">
+          <p class="slogan">Unleashing limitless possibilities</p>
+          <h1>Goje</h1>
+          <p class="tagline">Chemical Engineer by Discipline. Full-Stack Developer by Obsession.</p>
+          <p class="intro">I build production-grade web platforms for marketplaces, delivery systems, fintech-adjacent tools, and the Nigerian contexts most software quietly ignores.</p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#work">View My Work</a>
+            <a class="button" href="#contact">Let's Talk</a>
+            <a class="button button-quiet" href="Goje_Emmanuel_CV.pdf">Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal from-side" aria-label="Portfolio live preview">
+          <div class="preview-window">
+            <div class="preview-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          <div class="preview-stage">
+              <div class="preview-column">
+                <span class="preview-line long"></span>
+                <span class="preview-line medium"></span>
+                <span class="preview-line short"></span>
+              </div>
+              <div class="preview-card preview-card-one"></div>
+              <div class="preview-card preview-card-two"></div>
+              <button class="preview-switch" type="button" aria-label="Change preview state">
+                <span></span>
+              </button>
+              <div class="preview-orbit"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats reveal section" aria-label="Portfolio statistics">
+        <div>
+          <strong>7+</strong>
+          <span>Platforms Built</span>
+        </div>
+        <div>
+          <strong>5+</strong>
+          <span>Payment Products</span>
+        </div>
+        <div>
+          <strong>1</strong>
+          <span>Startup Founded</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>Self-Deployed</span>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-heading reveal from-side">
+          <p>About</p>
+          <h2>Reliability learned in plants, applied to products.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-copy reveal from-top">
+            <p>I'm Goje, a Chemical Engineering student at Modibbo Adama University, Yola, and a self-taught full-stack developer who builds things people actually use.</p>
+            <p>My SIWES training at Yola Petroleum Depot exposed me to pipelines, safety systems, operations, and logistics designed around failure prevention. That discipline now shapes how I approach software: practical architecture, clear flows, and products that can carry real users.</p>
+            <p>What began as tools for my department became full commerce platforms with payments, delivery logistics, KYC, messaging, AI-assisted learning, and cloud deployment.</p>
+          </article>
+          <div class="journey reveal from-side" aria-label="Professional path">
+            <div class="journey-row">
+              <span></span>
+              <p>Chemical Engineering</p>
+            </div>
+            <div class="journey-row">
+              <span></span>
+              <p>Industrial Training</p>
+            </div>
+            <div class="journey-row">
+              <span></span>
+              <p>Production Platforms</p>
+            </div>
+            <div class="journey-row">
+              <span></span>
+              <p>Founder, TrustBay</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section capabilities" id="capabilities">
+        <div class="section-heading reveal from-side">
+          <p>Capabilities</p>
+          <h2>Choose a lens. The work rearranges around it.</h2>
+        </div>
+        <div class="lens-shell reveal from-top">
+          <div class="lens-controls" role="tablist" aria-label="Project emphasis">
+            <button class="lens-button is-active" type="button" data-lens="systems">Systems</button>
+            <button class="lens-button" type="button" data-lens="commerce">Commerce</button>
+            <button class="lens-button" type="button" data-lens="context">Context</button>
+            <button class="lens-button" type="button" data-lens="delivery">Delivery</button>
+          </div>
+          <p class="lens-copy" id="lens-copy">Architecture, reliability, and end-to-end ownership sit underneath the strongest projects.</p>
+        </div>
+        <div class="skill-grid reveal" id="skill-grid">
+          <span data-tags="systems delivery">Python</span>
+          <span data-tags="systems commerce">JavaScript</span>
+          <span data-tags="systems commerce">TypeScript</span>
+          <span data-tags="delivery context">HTML/CSS</span>
+          <span data-tags="systems delivery">SQL</span>
+          <span data-tags="systems delivery">Flask</span>
+          <span data-tags="commerce delivery">Next.js</span>
+          <span data-tags="systems delivery">Neon Postgres</span>
+          <span data-tags="commerce delivery">Cloudinary</span>
+          <span data-tags="commerce delivery">Paystack</span>
+          <span data-tags="delivery systems">Vercel</span>
+          <span data-tags="delivery systems">Netlify</span>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="section-heading reveal from-side">
+          <p>Selected Work</p>
+          <h2>Products built around real constraints.</h2>
+        </div>
+
+        <div class="work-shell reveal from-top">
+          <div class="preview-frame-wrap">
+            <div class="preview-frame-topbar">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="preview-url" id="preview-url">mahrab-e-square.vercel.app</span>
+              <a class="preview-open" id="preview-open" href="https://mahrab-e-square.vercel.app/" target="_blank" rel="noreferrer">Open ↗</a>
+            </div>
+            <div class="preview-frame-stage">
+              <iframe id="project-iframe" class="project-iframe" src="https://mahrab-e-square.vercel.app/" title="Live project preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
+              <div class="preview-frame-loading" id="preview-frame-loading">
+                <span></span>
+                Loading live preview…
+              </div>
+              <div class="preview-frame-fallback" id="preview-frame-fallback">
+                <p>This site may block embedded previews.</p>
+                <a id="preview-fallback-link" href="https://mahrab-e-square.vercel.app/" target="_blank" rel="noreferrer">Open it directly ↗</a>
+              </div>
+            </div>
+            <div class="preview-frame-info">
+              <p id="preview-desc">A full-stack local business discovery and e-commerce marketplace built for Nigerian university communities, with vendor flows, customer flows, delivery logistics, KYC, subscriptions, notifications, and mobile-first commerce.</p>
+              <dl>
+                <div>
+                  <dt>Stack</dt>
+                  <dd id="preview-stack">Flask, Neon Postgres, Cloudinary, Paystack, Vercel</dd>
+                </div>
+                <div>
+                  <dt>Role</dt>
+                  <dd id="preview-role">Sole architect and developer</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="project-tabs" id="project-tabs" role="tablist" aria-label="Select a project to preview">
+            <button
+              type="button"
+              class="project-tab is-active"
+              role="tab"
+              aria-selected="true"
+              data-url="https://mahrab-e-square.vercel.app/"
+              data-name="Mahrab eSquare"
+              data-kicker="Flagship / In Progress"
+              data-desc="A full-stack local business discovery and e-commerce marketplace built for Nigerian university communities, with vendor flows, customer flows, delivery logistics, KYC, subscriptions, notifications, and mobile-first commerce."
+              data-stack="Flask, Neon Postgres, Cloudinary, Paystack, Vercel"
+              data-role="Sole architect and developer"
+            >
+              <span>Flagship / In Progress</span>
+              <h3>Mahrab eSquare</h3>
+              <p>Local business marketplace with vendors, delivery, and escrow orders.</p>
+            </button>
+            <button
+              type="button"
+              class="project-tab"
+              role="tab"
+              aria-selected="false"
+              data-url="https://trustbay.vercel.app/"
+              data-name="TrustBay"
+              data-kicker="Founder & CEO"
+              data-desc="A student-focused campus marketplace bringing structure, verification, messaging, and payments into peer-to-peer commerce."
+              data-stack="Next.js, TypeScript, Neon Postgres, Cloudinary, Paystack, Google OAuth"
+              data-role="Founder & Lead Developer"
+            >
+              <span>Founder & CEO</span>
+              <h3>TrustBay</h3>
+              <p>Campus marketplace with verification, messaging, and payments.</p>
+            </button>
+            <button
+              type="button"
+              class="project-tab"
+              role="tab"
+              aria-selected="false"
+              data-url="https://24sevendelivery.vercel.app/"
+              data-name="24sevendelivery"
+              data-kicker="Gift Delivery"
+              data-desc="A delivery e-commerce platform with Paystack checkout, discount codes, custom product options, notifications, and a secured admin panel."
+              data-stack="Flask, SQLite / Neon Postgres, Paystack"
+              data-role="Sole developer"
+            >
+              <span>Gift Delivery</span>
+              <h3>24sevendelivery</h3>
+              <p>Gift delivery e-commerce with checkout, codes, and notifications.</p>
+            </button>
+            <button
+              type="button"
+              class="project-tab"
+              role="tab"
+              aria-selected="false"
+              data-url="https://chemical-engineering-handbook.netlify.app"
+              data-name="Student Guide Portal"
+              data-kicker="AI Study Tool"
+              data-desc="A Chemical Engineering student handbook and exam prep platform with an AI exam sandbox and a course vault."
+              data-stack="Flask, React, DeepSeek API, IndexedDB"
+              data-role="Sole developer"
+            >
+              <span>AI Study Tool</span>
+              <h3>Student Guide Portal</h3>
+              <p>Department handbook with an AI exam sandbox and course vault.</p>
+            </button>
+            <button
+              type="button"
+              class="project-tab"
+              role="tab"
+              aria-selected="false"
+              data-url="https://nigerian-flight-finder.netlify.app/"
+              data-name="NaijaAir Finder"
+              data-kicker="Flight Search"
+              data-desc="A Nigerian flight comparison tool focused on local pricing expectations, API aggregation, and NGN currency handling."
+              data-stack="JavaScript, React, Node.js, Ignav / AviationStack / Duffel APIs"
+              data-role="Sole developer"
+            >
+              <span>Flight Search</span>
+              <h3>NaijaAir Finder</h3>
+              <p>Nigerian flight comparison with NGN pricing and API aggregation.</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section" id="experience">
+        <div class="section-heading reveal from-side">
+          <p>Experience</p>
+          <h2>Work shaped by operations, ownership, and repeated shipping.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span></span>
+            <h3>Industrial Trainee, Yola Petroleum Depot</h3>
+            <p>Rotated through six departments while documenting real-world process operations, safety systems, and logistics.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span></span>
+            <h3>Founder & Lead Developer, TrustBay</h3>
+            <p>Founded and built a campus marketplace from product direction through architecture, payments, and deployment.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span></span>
+            <h3>Independent Full-Stack Developer</h3>
+            <p>Designed, built, and deployed platforms spanning commerce, delivery logistics, AI-assisted education, and travel search.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="education-writing section">
+        <div class="education reveal from-top">
+          <p class="mini-label">Education</p>
+          <h2>Modibbo Adama University, Yola</h2>
+          <p>B.Eng. Chemical Engineering, expected graduation 2027. Coursework and department involvement span thermodynamics, transport phenomena, process optimization, fluid dynamics, student tools, and departmental digital initiatives.</p>
+        </div>
+        <div class="writing reveal from-side">
+          <p class="mini-label">Writing</p>
+          <h2>Field notes worth publishing.</h2>
+          <ul>
+            <li>From Petroleum Depot to Production Servers</li>
+            <li>What Building Nigerian Commerce Tools Taught Me</li>
+            <li>Debugging a Real Component Migration</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="testimonials section reveal">
+        <div class="section-heading">
+          <p>Testimonials</p>
+          <h2>Reserved for verified words.</h2>
+        </div>
+        <div class="quote-hold">
+          <p>TrustBay users, beta vendors, coursemates, and SIWES supervisors will sit here once gathered.</p>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="section-heading reveal from-side">
+          <p>Contact</p>
+          <h2>Let's build something.</h2>
+        </div>
+        <div class="contact-panel reveal from-top">
+          <p>Whether it's a platform, a partnership, or a technical conversation, reach out.</p>
+          <div class="contact-links">
+            <a href="mailto:emmanuelgoje389@gmail.com">Email</a>
+            <a href="tel:+2349061489169">Phone</a>
+            <a href="https://wa.me/2349061489169" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="https://x.com/Emmanuel1781046" target="_blank" rel="noreferrer">X / Twitter</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Goje. Built with Flask, Next.js, and a lot of late nights in Yola.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
