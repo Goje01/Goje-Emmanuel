@@ -3,6 +3,7 @@
   --panel: #141924;
   --muted: #8891A3;
   --paper: #EDEFF3;
+  --gutter: clamp(18px, 4vw, 56px);
 }
 
 * {
@@ -90,7 +91,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px clamp(18px, 4vw, 56px);
+  padding: 24px var(--gutter);
   background: linear-gradient(180deg, rgba(11, 14, 20, 0.92), rgba(11, 14, 20, 0));
 }
 
@@ -208,7 +209,7 @@ button {
 .site-menu {
   position: fixed;
   top: 82px;
-  right: clamp(18px, 4vw, 56px);
+  right: var(--gutter);
   z-index: 9;
   display: grid;
   gap: 4px;
@@ -250,7 +251,7 @@ main,
 }
 
 .section {
-  width: min(1180px, calc(100% - 36px));
+  width: min(1180px, calc(100% - (var(--gutter) * 2)));
   margin: 0 auto;
 }
 
@@ -1188,7 +1189,7 @@ h1 {
 }
 
 .footer {
-  width: min(1180px, calc(100% - 36px));
+  width: min(1180px, calc(100% - (var(--gutter) * 2)));
   margin: 0 auto;
   padding: 48px 0 34px;
 }
@@ -1400,48 +1401,14 @@ h1 {
 
   .hero {
     min-height: auto;
-    justify-items: center;
-    text-align: center;
-  }
-
-  .tagline,
-  .intro {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-actions {
-    justify-content: center;
   }
 
   .hero-panel {
-    justify-self: center;
-  }
-
-  .section-heading {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .about-grid {
-    justify-items: center;
-    text-align: center;
-  }
-
-  .about-copy p {
-    margin-left: auto;
-    margin-right: auto;
+    justify-self: stretch;
   }
 
   .journey-row {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-  }
-
-  .journey-row span {
-    margin-bottom: 6px;
+    grid-template-columns: 46px 1fr;
   }
 
   .stats {
@@ -1454,6 +1421,16 @@ h1 {
 
   .contact-links {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats div {
+    text-align: center;
+  }
+
+  .section-heading p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .preview-frame-info dl {
