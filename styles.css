@@ -1400,10 +1400,48 @@ h1 {
 
   .hero {
     min-height: auto;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .tagline,
+  .intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
   }
 
   .hero-panel {
-    justify-self: stretch;
+    justify-self: center;
+  }
+
+  .section-heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about-grid {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .about-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .journey-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .journey-row span {
+    margin-bottom: 6px;
   }
 
   .stats {
