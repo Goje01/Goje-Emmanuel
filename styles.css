@@ -1624,3 +1624,21 @@ h1 {
     transition-duration: 1ms !important;
   }
 }
+/* ============================================================
+   KICKER ALIGNMENT FIX — paste at the END of your style.css
+   Makes "Let's build something", "Choose a lens",
+   "The work rearranges around it", "Products built around
+   real constraints" all flush-left, exactly like
+   "Reserved for verified words".
+   ============================================================ */
+
+@media (max-width: 980px) {
+  .slogan,
+  .section-heading p,
+  .mini-label,
+  .project-kicker {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
