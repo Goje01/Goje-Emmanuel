@@ -14,18 +14,26 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  overflow-x: hidden;
+  overflow-x: clip;
   background:
     linear-gradient(120deg, rgba(20, 25, 36, 0.98), rgba(11, 14, 20, 1) 44%, rgba(20, 25, 36, 0.98)),
     var(--ink);
   color: var(--paper);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   letter-spacing: 0;
+}
+
+img,
+iframe,
+video,
+svg {
+  max-width: 100%;
 }
 
 a {
@@ -1454,12 +1462,28 @@ h1 {
 
 @media (max-width: 640px) {
   .site-header {
-    padding: 18px;
+    padding: 20px;
   }
 
   .site-menu {
     top: 72px;
-    right: 18px;
+    right: 20px;
+  }
+
+  .section,
+  .footer {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 10px;
+    z-index: 6;
+    border: 1px solid rgba(237, 239, 243, 0.16);
+    pointer-events: none;
   }
 
   .hero {
@@ -1472,8 +1496,20 @@ h1 {
     margin-bottom: 26px;
   }
 
+  .reveal {
+    transform: translateY(24px);
+  }
+
   .reveal.from-side {
-    transform: translateX(-24px) rotate(0.6deg);
+    transform: translateX(-14px) rotate(0.3deg);
+  }
+
+  .hero h1,
+  h1,
+  .tagline,
+  .section-heading h2 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .hero-actions {
@@ -1570,8 +1606,11 @@ h1 {
     font-size: clamp(3.4rem, 16vw, 5.2rem);
   }
 
-  .section {
-    width: min(1180px, calc(100% - 24px));
+  .section,
+  .footer {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1583,68 +1622,5 @@ h1 {
     animation-duration: 1ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 1ms !important;
-  }
-}/* ============================================================
-   MOBILE OVERFLOW FIX — paste at the END of your style.css
-   ============================================================ */
-
-/* 1. Hard-stop any horizontal bleed on every browser (incl. iOS Safari) */
-html,
-body {
-  overflow-x: clip;
-}
-
-img,
-iframe,
-video,
-svg {
-  max-width: 100%;
-}
-
-/* 2. Sections get real padding, so content can NEVER touch the left edge */
-@media (max-width: 640px) {
-  .section,
-  .footer {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /* keep the header/menu aligned with the new padding */
-  .site-header {
-    padding-left: 30px;
-    padding-right: 24px;
-  }
-
-  .site-menu {
-    right: 20px;
-  }
-
-  /* 3. Tame the left-slide reveal — it was pushing content off-screen */
-  .reveal.from-side {
-    transform: translateX(-14px) rotate(0.3deg);
-  }
-
-  .reveal {
-    transform: translateY(24px);
-  }
-
-  /* 4. Big type: guarantee it wraps instead of poking out */
-  .hero h1,
-  h1,
-  .tagline,
-  .section-heading h2 {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-  }
-
-  /* 5. Thin inset frame border so the layout visibly sits "inside" */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 10px;
-    z-index: 6;
-    border: 1px solid rgba(237, 239, 243, 0.16);
-    pointer-events: none;
   }
 }
