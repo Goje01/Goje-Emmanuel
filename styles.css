@@ -1613,7 +1613,7 @@ svg {
   /* keep the header/menu aligned with the new padding */
   .site-header {
     padding-left: 30px;
-    padding-right: 20px;
+    padding-right: 24px;
   }
 
   .site-menu {
